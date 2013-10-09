@@ -1,5 +1,4 @@
 # Hints.css
-==================
 It's a tooltip library based on the power of data-* attribute, pseudo elements, content property, CSS3 transforms and transitions in modern browsers
 
 Author: Korben Carreno (http://www.korbencarreno.com)  
