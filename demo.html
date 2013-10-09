@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+	<head>
+		<title>Hints.css - Demo</title>
+		<link rel="stylesheet" href="hints.css"></link>
+		
+		<style type="text/css">
+				body {
+					font-family: Georgia, "Times New Roman", Times, Serif;
+					font-size: 90%;
+					color: #666;
+					background: #e5e5e5;
+					padding: 1em 0;
+					margin: 0 auto;
+					width: 760px;
+				}
+
+				#middle {
+					width: 660px;
+					background: #FFFFFF;
+					padding: 20px 50px 30px;
+				}
+		</style>
+	</head>
+	<body>
+		<div id="middle">
+			<div class="article">
+			<h1>Hints.css</h1>
+				<p>It's a tooltip library based on the power of data-* attribute, pseudo elements, content property, CSS3 transforms and transitions in modern browsers.</p>
+				<p>Any element on your page which needs to have a tooltip has to be given at least one of the position classes: hint--top, hint--bottom, hint--left, hint--right to position the tooltip.</p> 
+				<pre>Hello World, &lt;div class="hint--bottom"&gt;hover me.&lt;/div&gt;</pre>
+				
+				<h3>Example</h3>
+
+				<p>Hello World, <span class="hint hint--top" data-hint="A simple hint."> hover over me!</span></p>
+				
+				<p>Hello World, <span class="hint hint--right" data-hint="A simple hint.">Coming from the right.</span></p>
+				
+				<p><span class="hint hint--left" data-hint="A simple hint.">Hello World, Coming from the left.</span></p>
+				
+				<p>Hello World, <span class="hint hint--bottom" data-hint="A simple hint.">Below.</span></p>
+			</div>
+		</div>          
+	</body>
+</html>

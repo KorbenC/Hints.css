@@ -1,0 +1,123 @@
+/* =========================================
+  	styles for Hints
+  	      (http://github.com/korbenc/hints.css)
+   ========================================= */
+ .hint {
+    position: relative;
+    display: inline-block;
+}
+.hint:before, .hint:after {
+    position: absolute;
+    opacity: 0;
+    z-index: 1000000;
+    pointer-events: none;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.hint:hover:before, .hint:hover:after {
+    opacity: 1;
+}
+.hint:before {
+    content:'';
+    position: absolute;
+    background: transparent;
+    border: 0.4em solid transparent;
+    z-index: 1000001;
+}
+.hint:after {
+    content: attr(data-hint);
+    background: #383838;
+    color: white;
+    text-shadow: 0 -1px 0px #000;
+    padding: 0.5em 1em;
+    font-size: .8em;
+    line-height: 1.5em;
+    font-weight: 200;
+    white-space: nowrap;
+    display: none;
+}
+@media (min-width: 57em) {
+    .hint:after {
+        display: inline-block;
+    }
+}
+.hint--top:before {
+    border-top-color: #383838;
+}
+.hint--bottom:before {
+    border-bottom-color: #383838;
+}
+.hint--left:before {
+    border-left-color: #383838;
+}
+.hint--right:before {
+    border-right-color: #383838;
+}
+.hint--top:before {
+    margin-bottom: -0.8em;
+}
+.hint--top:after {
+    margin-left: -1.6em;
+}
+.hint--top:before, .hint--top:after {
+    bottom: 100%;
+    left: 50%
+}
+.hint--top:hover:before, .hint--top:hover:after {
+    -webkit-transform: translateY(-0.5em);
+    -moz-transform: translateY(-0.5em);
+    transform: translateY(-0.5em);
+}
+.hint--bottom:before {
+    margin-top: -0.8em;
+}
+.hint--bottom:after {
+    margin-left: -1.6em;
+}
+.hint--bottom:before, .hint--bottom:after {
+    top: 100%;
+    left: 50%
+}
+.hint--bottom:hover:before, .hint--bottom:hover:after {
+    -webkit-transform: translateY(0.5em);
+    -moz-transform: translateY(0.5em);
+    transform: translateY(0.5em);
+}
+.hint--right:before {
+    margin-left: -0.8em;
+    margin-bottom: -0.4em;
+}
+.hint--right:after {
+    margin-bottom: -1em;
+}
+.hint--right:before, .hint--right:after {
+    left: 100%;
+    bottom: 50%
+}
+.hint--right:hover:before, .hint--right:hover:after {
+    -webkit-transform: translateX(0.5em);
+    -moz-transform: translateX(0.5em);
+    transform: translateX(0.5em);
+}
+.hint--left:before {
+    margin-right: -0.8em;
+    margin-bottom: -0.4em;
+}
+.hint--left:after {
+    margin-bottom: -1em;
+}
+.hint--left:before, .hint--left:after {
+    right: 100%;
+    bottom: 50%
+}
+.hint--left:hover:before, .hint--left:hover:after {
+    -webkit-transform: translateX(-0.5em);
+    -moz-transform: translateX(-0.5em);
+    transform: translateX(-0.5em);
+}
+.hint--rounded:after {
+    border-radius: 4px;
+}
