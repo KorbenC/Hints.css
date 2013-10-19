@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+    <title>Hints.css</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/styles.css" rel="stylesheet" media="screen">
+	<link href="css/hints.css" rel="stylesheet">
+	<link href="css/prettify.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Asap' rel='stylesheet'>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	<a href="https://github.com/KorbenC/Hints.css" target="blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+	<header>
+		<div class="header">
+			<h1>Hints.css</h1>
+			<h2>A simple minimalistic CSS tooltip for modern browsers</h2>
+		</div>
+	</header>
+	<div class="container main">
+		<p>Hints.css is a tooltip library based on the power of data-* attribute, pseudo elements, content property, CSS3 transforms and transitions in modern browsers.</p>
+		<p>Any element on your page which needs to have a tooltip has to be given at least one of the position classes: hint--top, hint--bottom, hint--left, hint--right to position the tooltip.</p>
+		<p>Below are some examples of hints.</p>
+	
+	<div class="title">
+		<h2>Examples</h2>
+	</div>
+	<div class="examples">
+		<button type="button" class="btn btn-default hint hint--top" data-hint="A simple top hint." id="btn_center">Top</button>
+
+		<br><br>
+		
+		<button type="button" class="btn btn-success hint hint--left" data-hint="A simple left hint." id="btn_left">Left</button>
+		
+		<button type="button" class="btn btn-warning hint hint--top hint--rounded" data-hint="A hint that is rounded." id="btn_mid">Rounded</button>
+		
+		<button type="button" class="btn btn-info hint hint--right" data-hint="A simple right hint." id="btn_right">Right</button>
+		<br><br>
+		
+		<button type="button" class="btn btn-primary hint hint--bottom" data-hint="A simple bottom hint." id="btn_bottom">Bottom</button>
+	</div>
+	<div class="title">
+		<h2>Getting Started</h2>
+	</div>
+	<div class="instructions">
+		<p>After you download <a href="https://github.com/KorbenC/Hints.css/archive/master.zip">hints.css</a>, move hints.css to your root's CSS directory. Next, include hints CSS file inside of your tags:</p>
+	<pre class="prettyprint">
+	 &lt;head>
+		&lt;link href="css/hints.css" rel="stylesheet"&gt;
+	 &lt;/head&gt
+	</pre>
+	<p>Adding hints to any element on your page extremely simple. Below is an example of a hint in a p tag.</p>
+	<pre class="prettyprint">
+	 &lt;p class="hint hint--top" data-hint="A hint inside a p tag.">Hello World, hover over me!&lt;/p>
+	</pre>
+		<p class="hint hint--top" data-hint="A hint inside a p tag."> Hello World, hover over me!</p>
+	<hr>
+	<p>Adding a tooltip to an link:</p>
+	<pre class="prettyprint">
+	&lt;a class="hint hint--top" data-hint="Follow me on Twitter!" href="#">yourlink&lt;/a>
+	</pre>
+	<a class="hint hint--top" data-hint="Follow me on Twitter!" href="https://twitter.com/Korben_Carreno">Twitter</a>
+	<hr>
+	<p>Adding a tooltip to an image:</p>
+	<pre class="prettyprint">
+	&lt;span class="hint hint--right" data-hint="Follow me on Facebook!">&lt;img src="yourimage.png">&lt;/span>
+	</pre>
+	<span class="hint hint--right" data-hint="Follow me on Facebook!"><img src="img/facebook.png"></span>
+	</div>
+	</div>
+	
+	<div class="container footer">
+	<br><br>
+	<p class="license">Developed and maintained by <a href="https://twitter.com/Korben_Carreno">Korben Carreno</a> under the <a href="http://opensource.org/licenses/MIT">MIT license.</a></p>
+	</div>
+	
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/prettify.js"></script>
+	<script>
+		prettyPrint();
+	</script>
+  </body>
+</html>
